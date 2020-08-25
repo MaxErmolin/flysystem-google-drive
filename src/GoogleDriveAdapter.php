@@ -1123,7 +1123,7 @@ class GoogleDriveAdapter extends AbstractAdapter
             $chunkSizeBytes = max(262144, min($chunkSizeBytes, floor($availableMemory / 4 / 262144) * 262144));
         }
 
-        return (int)$chunkSizeBytes;
+        return 262144;
     }
 
     /**
